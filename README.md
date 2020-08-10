@@ -16,14 +16,14 @@
 
 ## Sommaire 📚
 
-- [About](#about ❓)
-- [Installation](#installation 🛠)
-  - [Utilisation](#utilisation 🔋)
-  - [Commandes](#commandes 🕹)
-- [Exemples](#Exemples)
+- [About](#about)
+- [Installation](#installation)
+  - [Utilisation](#utilisation)
+  - [Commandes](#commandes)
+- [Exemples](#exemples)
 - [Aide](#aide 🔰)
 
-## About ❓
+## About
 
 hectik 📡 est un outil cli qui va vous permettre de créer et structurer votre bot discord en quelques clics. Hectik permet aussi de rajouter des commandes, ainsi que des events comme vous le voulez, sans avoir à créer de fichiers.
 
@@ -32,7 +32,7 @@ hectik 📡 est un outil cli qui va vous permettre de créer et structurer votre
 - Performant
 - Basé en local
 
-## Installation 🛠
+## Installation
 
 **Node.js 12.0.0 ou plus est requis.**  
 Vous pouvez ignorer les avertissements de la console vu que ceux-ci ne sont qu'optionnels.
@@ -41,11 +41,11 @@ Le module doit être installé globalement. Il est donc nécessaire d'avoir une 
 ```npm install hectik -g``` 
 
 
-## Utilisation 🔋
+## Utilisation
 ![Tutoriel](https://images2.imgbox.com/cc/00/zSdUKiYz_o.gif)
 
 
-## Commandes 🕹
+## Commandes
 
 **Pour le moment, seule la commande "nouveau" existe** !
 
@@ -83,6 +83,6 @@ Cette commande vous demandera l'event que vous voulez parmis la liste.
 $ hectik nouveau --h
 ```
 Cette commande vous donnera la liste des commandes précédemment expliquées.
-## Aide 🔰
+## Aide
 
 Si vous avez des questions ou du mal à utiliser le module, n'hésitez pas à me contacter par Discord: ``booleans#9476``. 
