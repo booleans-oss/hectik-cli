@@ -1,0 +1,53 @@
+{
+    "directories": [
+        {
+            "path": "/",
+            "name": "commands"
+        },
+        {
+            "path": "/",
+            "name": "events"
+        },
+        {
+            "path": "/",
+            "name": "utils"
+        }
+    ],
+    "files": [
+        {
+            "path": "/",
+            "name": "index.js",
+            "fonction": "index"
+        },
+        {
+            "path": "/commands/Exemple/",
+            "name": "TestCommand.js",
+            "fonction": "test"
+        },
+        {
+            "path": "/utils/assets/",
+            "name": "BotBase.js",
+            "fonction": "basebot"
+        },
+        {
+            "path": "/utils/assets/",
+            "name": "commandBase.js",
+            "fonction": "commandbase"
+        },
+        {
+            "path": "/events/",
+            "name": "message.js",
+            "fonction": "messageevent"
+        },
+        {
+            "path": "/events/",
+            "name": "ready.js",
+            "fonction": "readyevent"
+        },
+        {
+            "path": "/",
+            "name": ".env",
+            "fonction": "token"
+        }
+    ]
+}
