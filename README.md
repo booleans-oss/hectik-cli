@@ -55,11 +55,31 @@ Le module doit être installé globalement. Il est donc nécessaire d'avoir une 
 ```$ hectik nouveau <Options>```
 
 Les options sont les drapeaux suivants:
-[-] `-h, --help`: qui vous donnera la liste des commandes
-[-] `-c, --command`: qui crée la commande que vous voudrez
-[-] `-e, --event`: qui crée l'event parmis la liste des events `@discord.js`.
-[-] `--v, version`: donne la version actuelle du package
+* `-h, --help`: qui vous donnera la liste des commandes
+* `-c, --command`: qui crée la commande que vous voudrez
+* `-e, --event`: qui crée l'event parmis la liste des events `@discord.js`.
+* `--v, version`: donne la version actuelle du package
 
+## Exemples
+```bash
+$ hectik nouveau
+```
+Cette commande vous demandera ce que vous voulez créer.
+
+```bash
+$ hectik nouveau --c
+```
+Cette commande vous demandera la commande souhaitée.
+
+```bash
+$ hectik nouveau --e
+```
+Cette commande vous demandera l'event que vous voulez parmis la liste.
+
+```bash
+$ hectik nouveau --h
+```
+Cette commande vous donnera la liste des commandes précédemment expliquées.
 ## Aide 🔰
 
 Si vous avez des questions ou du mal à utiliser le module, n'hésitez pas à me contacter par Discord: ``booleans#9476``. 
