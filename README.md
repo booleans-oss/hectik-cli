@@ -16,15 +16,12 @@
 
 ## Sommaire 📚
 
-- [About](#about)
-- [Installation](#installation)
-  - [Audio engines](#audio-engines)
-  - [Optional packages](#optional-packages)
-- [Example Usage](#example-usage)
-- [Links](#links)
-  - [Extensions](#extensions)
-- [Contributing](#contributing)
-- [Help](#help)
+- [About](#about ❓)
+- [Installation](#installation 🛠)
+  - [Utilisation](#utilisation 🔋)
+  - [Commandes](#commandes 🕹)
+- [Exemples](#Exemples)
+- [Aide](#aide 🔰)
 
 ## About ❓
 
@@ -55,6 +52,7 @@ Le module doit être installé globalement. Il est donc nécessaire d'avoir une 
 ```$ hectik nouveau <Options>```
 
 Les options sont les drapeaux suivants:
+* `-b, --bot`: qui crée le bot de a-z.
 * `-h, --help`: qui vous donnera la liste des commandes
 * `-c, --command`: qui crée la commande que vous voudrez
 * `-e, --event`: qui crée l'event parmis la liste des events `@discord.js`.
@@ -70,6 +68,11 @@ Cette commande vous demandera ce que vous voulez créer.
 $ hectik nouveau --c
 ```
 Cette commande vous demandera la commande souhaitée.
+
+```bash
+$ hectik nouveau --b
+```
+Cette commande vous crée et organise le bot.
 
 ```bash
 $ hectik nouveau --e
