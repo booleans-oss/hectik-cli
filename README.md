@@ -21,7 +21,7 @@
   - [Utilisation](#utilisation)
   - [Commandes](#commandes)
 - [Exemples](#exemples)
-- [Aide](#aide 🔰)
+- [Aide](#aide)
 
 ## About
 
