@@ -10,7 +10,7 @@ export async function commandHandling() {
     let capitalized = answers.nom_commande.charAt(0).toUpperCase() + answers.nom_commande.slice(1);
     let path = answers.dir_commande;
     let aliases:any[] = []
-    if(answers.alias_commande === "Aucun") aliases = [answers.nom_commande]
+    if(answers.alias_commande === "Aucun") aliases = [`"${answers.nom_commande}"`]
     else if(answers.alias_commande !== "Aucun") aliases = answers.alias_commande.split(",").map((alias:string) => `"${alias.trim()}"`);
     if(!fs.existsSync(`./commands/`)) return console.log("Veuillez exécuter cette commande dans le dossier de votre bot.")
     if(!fs.existsSync(`./commands/${path}`)) {
