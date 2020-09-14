@@ -1,10 +1,10 @@
 {
-  "name": "discord-cli",
-  "version": "2.0.0",
+  "name": "hectik",
+  "version": "1.1.1",
   "description": "",
   "main": "./lib/index.js",
   "bin": {
-    "discord-cli": "./lib/src/index.js"
+    "hectik": "./lib/src/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -15,7 +15,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booleans-oss/hectik-cli.git"
+  },
+  "homepage": "https://github.com/booleans-oss/hectik-cli#readme",
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/inquirer": "^7.3.0",
     "@types/node": "^14.0.27",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
@@ -26,10 +32,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
     "commander": "^6.0.0",
-    "discord.js": "^12.2.0",
-    "fs": "0.0.1-security",
     "inquirer": "^7.3.3",
     "listr": "^0.14.3",
     "log-symbols": "^4.0.0"
