@@ -18,4 +18,3 @@ export async function buildDir() {
           if(answers.req === "Nouvel event") return await eventHandling();
         }
   }
-  //MzM1MDUwNzAzOTA5Mjg5OTg3.WWd2SA.yfImdILoVmDiPDgPWV7ChST7lsc
