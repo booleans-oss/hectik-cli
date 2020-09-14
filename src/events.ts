@@ -2,6 +2,7 @@ class Events {
   channelCreate = `module.exports = class {
     constructor(client) {
       this.client = client;
+      this.name = "channelCreate"
     }
     async run(client, newChannel) {
       console.log(newChannel.name)
@@ -10,6 +11,7 @@ class Events {
   channelDelete = `module.exports = class {
     constructor(client) {
       this.client = client;
+      this.name = "channelDelete"
     }
     async run(client, oldChannel) {
       console.log(newChannel.name)
@@ -18,6 +20,7 @@ class Events {
   channelPinsUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "channelPinsUpdate"
       }
       async run(client, channel, time) {
         console.log(channel.name, time)
@@ -26,6 +29,7 @@ class Events {
     channelUpdate=`module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "channelUpdate"
       }
       async run(client, oldChannel, newChannel) {
         console.log(oldChannel.name, newChannel.name)
@@ -34,6 +38,7 @@ class Events {
     debug= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "debug"
       }
       async run(client, info) {
         console.log(info)
@@ -42,6 +47,7 @@ class Events {
     emojiCreate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "emojiCreate"
       }
       async run(client, emoji) {
         console.log(emoji.url)
@@ -50,6 +56,7 @@ class Events {
     emojiDelete= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "emojiDelete"
       }
       async run(client, emoji) {
         console.log(emoji.url)
@@ -58,6 +65,7 @@ class Events {
     emojiUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "emojiUpdate"
       }
       async run(client, emoji) {
         console.log(emoji.url)
@@ -66,6 +74,7 @@ class Events {
     error= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "error"
       }
       async run(client, error) {
         console.log(error)
@@ -74,6 +83,7 @@ class Events {
     guildBanAdd= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildBanAdd"
       }
       async run(client, guild, user) {
         console.log(guild.name, user.username)
@@ -82,6 +92,7 @@ class Events {
     guildBanRemove= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildBanRemove"
       }
       async run(client, guild, user) {
         console.log(guild.name, user.username)
@@ -90,6 +101,7 @@ class Events {
     guildCreate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildCreate"
       }
       async run(client, guild) {
         console.log(guild.name)
@@ -98,6 +110,7 @@ class Events {
     guildDelete= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildDelete"
       }
       async run(client, guild) {
         console.log(guild.name)
@@ -106,6 +119,7 @@ class Events {
     guildIntegrationsUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildIntegrationUpdate"
       }
       async run(client, guild) {
         console.log(guild.name)
@@ -114,6 +128,7 @@ class Events {
     guildMemberAdd= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildMemberAdd"
       }
       async run(client, member) {
         console.log(member.user.username)
@@ -122,6 +137,7 @@ class Events {
     guildMemberRemove= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildMemberRemove"
       }
       async run(client, member) {
         console.log(member.user.username)
@@ -130,6 +146,7 @@ class Events {
     guildMembersChunk= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildMemberChunk"
       }
       async run(client, members, chunk) {
         console.log(member.user.username)
@@ -138,6 +155,7 @@ class Events {
      guildMemberSpeaking= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildMemberSpeaking"
       }
       async run(client, member, speaking) {
         console.log(member.user.username)
@@ -154,6 +172,7 @@ class Events {
     guildUnavailable= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildUnavailable"
       }
       async run(client, guild) {
         console.log(guild.name)
@@ -162,6 +181,7 @@ class Events {
     guildUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "guildUpdate"
       }
       async run(client, oldGuild, newGuild) {
         console.log(oldGuild.name, newGuild.name)
@@ -170,6 +190,7 @@ class Events {
     invalidated= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "invalidated"
       }
       async run(client) {
         console.log(client.name)
@@ -178,6 +199,7 @@ class Events {
 inviteCreate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "inviteCreate"
       }
       async run(client, invite) {
         console.log(invite.url)
@@ -186,6 +208,7 @@ inviteCreate= `module.exports = class {
 inviteDelete= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "inviteDelete"
       }
       async run(client, invite) {
         console.log(invite.url)
@@ -194,6 +217,7 @@ inviteDelete= `module.exports = class {
 messageDelete= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageDelete"
       }
       async run(client, message) {
         console.log(message.content)
@@ -202,6 +226,7 @@ messageDelete= `module.exports = class {
 messageDeleteBulk= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageDeleteBulk"
       }
       async run(client, messages) {
         console.log(message)
@@ -210,6 +235,7 @@ messageDeleteBulk= `module.exports = class {
 messageReactionAdd= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageReactionAdd"
       }
       async run(client, reaction, user) {
         console.log(reaction.message.content)
@@ -218,6 +244,7 @@ messageReactionAdd= `module.exports = class {
 messageReactionRemove= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageReactionRemove"
       }
       async run(client, reaction, user) {
         console.log(reaction.message.content)
@@ -226,6 +253,7 @@ messageReactionRemove= `module.exports = class {
 messageReactionRemoveAll= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageReactionRemoveAll"
       }
       async run(client, message) {
         console.log(message.content)
@@ -234,6 +262,7 @@ messageReactionRemoveAll= `module.exports = class {
 messageReactionRemoveEmoji= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageReactionRemoveEmoji"
       }
       async run(client, reaction) {
         console.log(reaction.message.content)
@@ -242,6 +271,7 @@ messageReactionRemoveEmoji= `module.exports = class {
 messageUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "messageUpdate"
       }
       async run(client, message) {
         console.log(message.content)
@@ -250,6 +280,7 @@ messageUpdate= `module.exports = class {
 presenceUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "presenceUpdate"
       }
       async run(client, oldPresence, newPresence) {
         console.log(oldPresence.activities, newPresence.activities)
@@ -258,14 +289,16 @@ presenceUpdate= `module.exports = class {
 rateLimit= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "rateLimit"
       }
       async run(client, "info" = { timeout, limit, method, path, route}) {
-        console.log(oldPresence.activities, newPresence.activities)
+        console.log(info)
       }
     };`
 roleCreate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "roleCreate"
       }
       async run(client, role) {
         console.log(role.name)
@@ -274,6 +307,7 @@ roleCreate= `module.exports = class {
 roleDelete= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "roleDelete"
       }
       async run(client, role) {
         console.log(role.name)
@@ -281,6 +315,7 @@ roleDelete= `module.exports = class {
     };`
 roleUpdate= `module.exports = class {
       constructor(client) {
+        this.name = "roleUpdate"
         this.client = client;
       }
       async run(client, oldRole, newRole) {
@@ -289,6 +324,7 @@ roleUpdate= `module.exports = class {
     };`
 shardDisconnect= `module.exports = class {
       constructor(client) {
+        this.name = "shardDisconnect"
         this.client = client;
       }
       async run(client, event, id) {
@@ -297,6 +333,7 @@ shardDisconnect= `module.exports = class {
     };`
 shardError= `module.exports = class {
       constructor(client) {
+        this.name = "shardError"
         this.client = client;
       }
       async run(client, error, shardID) {
@@ -305,6 +342,7 @@ shardError= `module.exports = class {
     };`
 shardReady= `module.exports = class {
       constructor(client) {
+        this.name = "shardReady"
         this.client = client;
       }
       async run(client, id, unavailableGuilds) {
@@ -313,6 +351,7 @@ shardReady= `module.exports = class {
     };`
 shardReconnecting= `module.exports = class {
       constructor(client) {
+        this.name = "shardReconnecting"
         this.client = client;
       }
       async run(client, id) {
@@ -322,6 +361,7 @@ shardReconnecting= `module.exports = class {
 shardResume= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "shardResume"
       }
       async run(client, id, replayedEvents) {
         console.log(id)
@@ -329,6 +369,7 @@ shardResume= `module.exports = class {
     };`
 typingStart= `module.exports = class {
       constructor(client) {
+        this.name = "typingStart"
         this.client = client;
       }
       async run(client, channel, user) {
@@ -338,6 +379,7 @@ typingStart= `module.exports = class {
 userUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "userUpdate"
       }
       async run(client, oldUser, newUser) {
         console.log(oldUser.username, newUser.username)
@@ -346,6 +388,7 @@ userUpdate= `module.exports = class {
 voiceStateUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "voiceStateUpdate"
       }
       async run(client, oldState, newState) {
         console.log(oldState.channel.name, newState.channel.name)
@@ -354,6 +397,7 @@ voiceStateUpdate= `module.exports = class {
 warn= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "warn"
       }
       async run(client, info) {
         console.log(info)
@@ -362,6 +406,7 @@ warn= `module.exports = class {
 webhookUpdate= `module.exports = class {
       constructor(client) {
         this.client = client;
+        this.name = "webhookUpdate"
       }
       async run(client, channel) {
         console.log(channel.name)
